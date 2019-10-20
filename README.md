@@ -1,3 +1,3 @@
 # web-smk-giripuro
 
-Lorem ipsum dolor
+## Lorem ipsum dolor
