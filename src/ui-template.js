@@ -12,12 +12,6 @@ templates.topNavigation = function() {
         <li class='nav-item'>
           <a id='home' class='nav-link' href='#'><i class='fa fa-home'></i>&nbsp;Beranda <span class='sr-only'>(current)</span></a>
         </li>
-        <li class='nav-item'>
-          <a id='data' class='nav-link' href='#'><i class='fa fa-bar-chart'></i>&nbsp;Data</a>
-        </li>
-        <li class='nav-item'>
-          <a id='peta' class='nav-link' href='#'><i class='fa fa-map'></i>&nbsp;Peta</a>
-        </li>
       </ul>
       <ul class='navbar-nav right-topnav-section'>
         <li class='nav-item'>
