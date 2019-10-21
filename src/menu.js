@@ -23,7 +23,7 @@ menu._activateTopNav = function() {
       case 'login':
         let loginBoxDOM = templates.loginBox();
         let cmdButtonsDOM = templates.loginButtons();
-        document.getElementById('form_modal_label').innerHTML = "<i class='fa fa-lock'></i>&nbsp;Login SIG SATPOL PP";
+        document.getElementById('form_modal_label').innerHTML = "<i class='fa fa-lock'></i>&nbsp;Login";
         document.getElementById('form_modal_body').innerHTML = loginBoxDOM;
         document.getElementById('form_modal_footer').innerHTML = cmdButtonsDOM;
         $('#modalform').modal({'show':true, 'backdrop':'static'});
