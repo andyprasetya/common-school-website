@@ -14,12 +14,6 @@ menu._activateTopNav = function() {
       case 'home':
 
         break;
-      case 'data':
-
-        break;
-      case 'peta':
-
-        break;
       case 'login':
         let loginBoxDOM = templates.loginBox();
         let cmdButtonsDOM = templates.loginButtons();
@@ -33,11 +27,11 @@ menu._activateTopNav = function() {
             var iun = document.getElementById('username').value,
               ipw = document.getElementById('password').value;
             if (iun.length < 3 || ipw.length < 3) {
-              document.getElementById('notice').innerHTML = "<div class='alert alert-danger pl-0 pr-0 text-center' role='alert'>Username/password Anda salah.</div>";
+              document.getElementById('notice').innerHTML = "<div class='alert alert-danger pl-0 pr-0 text-center' role='alert'>Login failed. Please try again.</div>";
               setTimeout(function(){
                 document.getElementById('username').value = '';
                 document.getElementById('password').value = '';
-                document.getElementById('notice').innerHTML = "<div class='alert alert-secondary pl-0 pr-0 text-center' role='alert'>Masukkan username dan password Anda.</div>";
+                document.getElementById('notice').innerHTML = "<div class='alert alert-secondary pl-0 pr-0 text-center' role='alert'>Enter your username and password.</div>";
                 document.getElementById('username').focus();
               },1500);
             } else {
@@ -56,23 +50,18 @@ menu._activateTopNav = function() {
               })
               .then(function(data){
                 if (data.response=="201") {
-                  document.getElementById('notice').innerHTML = "<div class='alert alert-success pl-0 pr-0 text-center' role='alert'>Login berhasil. Memuat aplikasi...</div>";
-                  sessionStorage.setItem('codex', data.codex);
-                  sessionStorage.setItem('module', data.module);
-                  sessionStorage.setItem('userid', data.userid);
-                  sessionStorage.setItem('username', data.usernm);
-                  sessionStorage.setItem('realname', data.userrn);
+                  document.getElementById('notice').innerHTML = "<div class='alert alert-success pl-0 pr-0 text-center' role='alert'>Login success. Loading application...</div>";
                   setTimeout(function(){
                     document.getElementById('username').value = '';
                     document.getElementById('password').value = '';
                     document.location = "../app/";
                   },2000);
                 } else {
-                  document.getElementById('notice').innerHTML = "<div class='alert alert-danger pl-0 pr-0 text-center' role='alert'>Login gagal. Ulangi login Anda.</div>";
+                  document.getElementById('notice').innerHTML = "<div class='alert alert-danger pl-0 pr-0 text-center' role='alert'>Login failed. Please try again.</div>";
                   setTimeout(function(){
                     document.getElementById('username').value = '';
                     document.getElementById('password').value = '';
-                    document.getElementById('notice').innerHTML = "<div class='alert alert-secondary pl-0 pr-0 text-center' role='alert'>Masukkan username dan password Anda.</div>";
+                    document.getElementById('notice').innerHTML = "<div class='alert alert-secondary pl-0 pr-0 text-center' role='alert'>Enter your username and password.</div>";
                     document.getElementById('username').focus();
                   },1500);
                 }
