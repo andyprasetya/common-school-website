@@ -1,3 +1,3 @@
-# web-smk-giripuro
+# SMK Giripuro
 
-## Lorem ipsum dolor
+### Sekolah Menengah Kejuruan Giripuro, Sumpiuh, Kabupaten Banyumas
