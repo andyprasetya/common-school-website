@@ -2,6 +2,6 @@
 
 ### Sekolah Menengah Kejuruan Giripuro, Sumpiuh, Kabupaten Banyumas
 
-lorem ipsum dolor sit amet
+lorem ipsum dolor sit amet sif tincidunct
 
 set vitae discimus
